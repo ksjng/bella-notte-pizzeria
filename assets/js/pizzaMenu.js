@@ -55,20 +55,20 @@ pizzas.forEach(pizza => {
 
     const item = document.createElement("div");
 
-    item.className = "pizza-col flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-white p-4 rounded shadow";
+    item.className = "flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 bg-white p-4 rounded shadow";
 
     item.innerHTML = `
         <img src="assets/img/menu/${pizza.image}" alt="${pizza.name}" class="w-30 h-30 object-cover rounded md:w-32 h-auto text-center" />
         <div class="flex flex-col justify-between text-center md:text-left flex-1 h-full">
             <div>
                 <h3 class="text-xl md:text-2xl font-semibold mb-1">${pizza.name}</h3>
-                <p class="pizza-ingredients text-md text-gray-600">${pizza.ingredients}</p>
+                <p class="text-md text-gray-600">${pizza.ingredients}</p>
             </div>
             <div class="mt-2 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
                 <p class="text-md md:text-lg font-semibold text-gray-600">
                     od
                     <span class="font-bold text-orange-500">
-                        <span class="pizza-price">${pizza.price.toFixed(2)}</span> 
+                        ${pizza.price.toFixed(2)}
                         zł
                     </span>
                 </p>
