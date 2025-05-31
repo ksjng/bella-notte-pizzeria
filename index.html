@@ -90,7 +90,7 @@
 
             <!-- About -->
 
-            <section id="about" class="py-16 px-6 md:px-12 text-center">
+            <section id="about" class="py-16 px-6 md:px-12 text-center mt-4">
 
                 <div class="max-w-3xl mx-auto">
                     <h2 class="text-4xl font-bold text-orange-500 mb-6">Kim jesteśmy?</h2>
@@ -133,9 +133,50 @@
 
             </section>
 
-            <section id="contact">
-                <h2>Kontakt</h2>
-            </section>
+
+            <!-- Contact -->
+
+            <section id="contact" class="py-12 px-6 md:px-20">
+
+                <h2 class="text-4xl font-bold text-orange-500 mb-8 text-center">Kontakt</h2>
+                
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                  
+                    <div class="space-y-4 text-center md:text-left">
+                        <p class="text-lg font-semibold text-orange-600">Bella Notte Pizzeria</p>
+                        <p class="text-gray-700">ul. Włoska 15, 00-123 Przykładowo</p>
+                        <p class="text-gray-700">Telefon: <a href="tel:+48123456789" class="text-orange-600 hover:text-black">+48 123 456 789</a></p>
+                        <p class="text-gray-700">Email: <a href="mailto:kontakt@example.com" class="text-orange-600 hover:text-black">kontakt@example.com</a></p>
+                        <p class="text-gray-700">Godziny otwarcia: <br />Pn-Pt: 11:00 - 22:00<br />Sb-Nd: 12:00 - 23:00</p>
+                    
+                        <div class="mt-6">
+                            <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded shadow transition">Zobacz na mapie</a>
+                        </div>
+                </div>
+                  
+                <form class="bg-white p-6 rounded shadow space-y-4" action="#" method="POST">
+
+                    <div>
+                        <label for="name" class="block mb-1 font-semibold text-gray-700">Imię i nazwisko</label>
+                        <input type="text" name="name" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400" />
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block mb-1 font-semibold text-gray-700">Email</label>
+                        <input type="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400" />
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block mb-1 font-semibold text-gray-700">Twoja wiadomość</label>
+                        <textarea name="message" rows="4" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400 resize-none"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded transition">Wyślij wiadomość</button>
+                
+                </form>
+                  
+                </div>
+              </section>
 
         </main>
 
