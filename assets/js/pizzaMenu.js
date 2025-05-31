@@ -80,23 +80,3 @@ pizzas.forEach(pizza => {
     container.appendChild(item);
 
 });
-
-document.addEventListener("click", (e) => {
-
-    if(!e.target.classList.contains("order-btn")) return;
-    
-    const itemDiv = e.target.closest("div.pizza-col");
-    if(!itemDiv) return;
-      
-    const pizzaName = itemDiv.querySelector("h3").textContent;
-    const pizzaImageSrc = itemDiv.querySelector("img").src;
-    const pizzaIngredients = itemDiv.querySelector(".pizza-ingredients").textContent;
-    const pizzaPrice = itemDiv.querySelector(".pizza-price").textContent;
-      
-    document.getElementById("modal-pizza-name").textContent = pizzaName;
-    document.getElementById("modal-pizza-image").src = pizzaImageSrc;
-    document.getElementById("modal-pizza-image").alt = pizzaName;
-    document.getElementById("modal-pizza-ingredients").textContent = pizzaIngredients;
-    document.getElementById("modal-pizza-price").textContent = pizzaPrice;
-
-});
