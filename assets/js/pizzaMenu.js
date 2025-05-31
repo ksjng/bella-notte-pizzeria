@@ -72,7 +72,7 @@ pizzas.forEach(pizza => {
                         zł
                     </span>
                 </p>
-                <button type="button" data-modal-target="order-modal" data-modal-toggle="order-modal" class="order-btn bg-orange-500 hover:bg-orange-600 text-white text-sm px-3 py-1 rounded transition">Zamów</button>
+                <button type="button" class="bg-orange-500 hover:bg-orange-600 text-white text-sm px-3 py-1 rounded transition">Zamów</button>
             </div>
         </div>
     `;
